@@ -1,0 +1,102 @@
+.contact-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    border: 1px solid rgb(85, 85, 85);
+    border-radius: 10px;
+    height: auto;   
+    z-index: 0;
+    padding: 30px;
+}
+.contact{
+    width: 55%;
+    height: 100%;
+    padding-left: 25px;
+}
+.contact h1{
+    font-size: 30px;
+    font-weight: 700;
+    background-image: linear-gradient(cyan,blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.contact h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+}
+.contact a button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    background-color: rgb(8, 26, 37);
+    border: none;
+    color: white; 
+    font-size: 17px;
+    font-weight: 500;
+}
+.contact a button:hover{
+    background-color:  rgb(85, 175, 175);
+    transition: 0.3s ease-in;
+}
+.contact-ikon{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-ikon .icon{
+    font-size: 250px;
+    color: rgb(85, 175, 175);
+}
+@media (max-width: 767px) {
+    .contact-container{
+        width: 100%;
+    }
+    .contact-ikon .icon{
+        font-size: 200px;
+    }
+    .contact h1{
+       font-size: 25px;
+    }
+    .contact h2{
+       font-size: 18px;
+    }
+    .contact a button{
+      width: 120px;
+      height: 35px;
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 450px) {
+    .contact-container{
+        padding: 25px;
+    }
+    .contact{
+       padding-left: 0;
+    }
+    .contact h1{
+        font-size: 20px;
+     }
+     .contact h2{
+        font-size: 15px;
+     }
+     .contact-ikon .icon{
+        font-size: 150px;
+    }
+    .h2-spn{
+        display: none;
+    }
+  }

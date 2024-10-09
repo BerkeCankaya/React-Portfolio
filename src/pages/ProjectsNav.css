@@ -1,0 +1,31 @@
+.container-projectsNav{
+    width:50%;
+    margin: auto;
+    border-radius: 10px;
+    height: 100%;
+    padding: 20px;
+}
+.container-projectsNav.dark-mode {
+    background-color: #f0f0f0;
+  }
+  @media (max-width: 1629px) {
+    .container-projectsNav{
+     width: 60%;
+    }
+   }
+   @media (max-width: 1400px) {
+    .container-projectsNav{
+     width: 70%;
+    }
+   }
+   @media (max-width: 1300px) {
+    .container-projectsNav{
+     width: 90%;
+    }
+   }
+   @media (max-width: 767px) {
+    .container-projectsNav{
+      width: 100%;
+      padding: 0;
+     }
+    }

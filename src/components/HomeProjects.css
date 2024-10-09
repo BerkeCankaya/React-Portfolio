@@ -1,0 +1,122 @@
+.container-HomeProjects{
+    padding-top: 100px;
+    padding-left: 25px;
+    width: 100%; 
+}
+.container-HomeProjects h4{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+.HomeProjects-card{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    padding-top: 75px;
+    justify-content: space-between;
+}
+.HomeProject-0 {
+    width:40%;
+    height: auto;
+}
+.HomeProject-1{
+    width: 40%;
+    height: auto;
+}
+.HomeProject-2{
+    width: 40%;
+    height: auto;
+}
+.HomeProject-3{
+    width: 40%;
+    height: auto;
+}
+.HomeProject-4{
+    width: 40%;
+    height: auto;
+}
+.HomeProject-5{
+    width: 40%;
+    height: auto;
+}
+.container-HomeProjects.dark-mode h4 {
+    color: black;
+  }
+  @media (max-width: 1024px) {
+    .container-HomeProjects h4{
+        font-size: 22px;
+    }
+    .HomeProject-0 {
+        width: 45%;
+    }
+    .HomeProject-1{
+        width: 45%;
+    }
+    .HomeProject-2{
+        width: 45%;
+    }
+    .HomeProject-3{
+        width: 45%;
+    }
+    .HomeProject-4{
+        width: 45%;
+    }
+    .HomeProject-5{
+        width: 45%;
+    }
+  }
+  @media (max-width: 550px) {
+    .HomeProjects-card{
+        padding-top: 50px;
+        justify-content: center;
+    }
+    .HomeProject-0 {
+        width:70%;
+    }
+    .HomeProject-1{
+        width: 70%;
+    }
+    .HomeProject-2{
+        width: 70%;
+    }
+    .HomeProject-3{
+        width: 70%;
+    }
+    .HomeProject-4{
+        width: 70%;
+    }
+    .HomeProject-5{
+        width: 70%;
+    }
+  }
+  @media (max-width: 400px) {
+    .HomeProjects-card{
+        padding-top: 50px;
+        justify-content: center;
+    }
+    .HomeProject-0 {
+        width:90%;
+    }
+    .HomeProject-1{
+        width: 90%;
+    }
+    .HomeProject-2{
+        width: 90%;
+    }
+    .HomeProject-3{
+        width: 90%;
+    }
+    .HomeProject-4{
+        width: 90%;
+    }
+    .HomeProject-5{
+        width: 90%;
+    }
+    .HomeProjects-card{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 100px;
+        padding-top: 75px;
+        justify-content: space-between;
+    }
+  }

@@ -1,0 +1,168 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    padding-left: 50px;
+    border: 1px solid rgb(85, 85, 85);
+    padding-right: 50px;
+    border-radius: 10px;
+    height: 50px;   
+    z-index: 0;
+    position: relative;
+    animation: slideDown 1s ease-out;
+}
+@keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.nav-left{
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.nav ul a{
+    font-size: 30px;
+    font-weight: bold;
+    background-image: linear-gradient(cyan,blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav ul li a {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.nav::before{
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    opacity: 0.2;
+    transform: translateX(-50%) ;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to bottom right,rgb(12, 157, 201),rgb(8, 49, 185));
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: -1;
+}
+.nav-right{
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+    padding-top: 5px;
+}
+.nav-right a{
+    color: white;
+    font-size: 17px;
+}
+.burger-icon {
+  display: none;
+  cursor: pointer;
+
+}
+.nav-right a:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.nav-right span{
+    color: white;
+    font-size: 20px;
+}
+.nav.dark-mode {
+    background-color: #f0f0f0;
+  }
+  
+.nav.dark-mode .nav-right a{
+    color: black;
+  }
+  .nav.dark-mode .nav-right span{
+    color: black;
+  }
+  .nav.dark-mode .nav-left ul li a{
+    color: black;
+  }
+  .nav.dark-mode {
+    border: 1px solid #d4d4d4;
+    background-color: #f0f0f0;
+  }
+  .burger-menu{
+    display: none;
+    position: absolute;
+    top: 43px; 
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 0 0 10px 10px;
+    z-index: 0;
+    background-color: transparent;
+    box-shadow: 0 1px 2px 0 white;
+}
+.burger-menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start; 
+}
+  @media (max-width: 767px) {
+    .nav ul a{
+      font-size: 25px;
+  }
+  .nav ul li a {
+    font-size: 15px;
+}
+.nav-right a{
+  font-size: 15px;
+}
+.burger-icon {
+  display: block;
+}
+.menu-item {
+  display: none;
+}
+.burger-menu{
+  display: block;
+}
+.nav{
+  max-width: 85%;
+ }
+  }
+  @media (max-width: 500px) {
+    .nav-right {
+      gap: 5px;
+    }
+  }
+  @media (max-width: 400px) {
+.nav{
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav-left{
+  width: 100%;
+}
+.nav-right{
+  width: 100%;
+  gap: 5px;
+}
+     }
+  

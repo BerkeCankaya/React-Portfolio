@@ -1,0 +1,253 @@
+.container-contactPage{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    height: auto;   
+    z-index: 0;
+    flex-wrap: wrap;
+    margin-top: 210px;
+}
+@keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+.left-contact{
+    width: 45%;
+    animation: slideLeft 1s ease-out;
+}
+.title-contact{
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    line-height: 40px;
+    font-weight: 600;
+    
+}
+.title-contact .Pi{
+    color:yellow;
+    font-size: 50px;
+    position: relative;
+    top: 10px;
+}
+.detail-contact{
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    text-align: left;
+}
+.detail-contact h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.detail-contact h5 .Md{
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+.detail-contact h5 .Fa{
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+.right-contact{
+    width: 55%;
+    height: auto;
+    animation: slideRight 1s ease-out;  
+}
+.right-contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+.right-contact input,
+.right-contact textarea{
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 5px 0 cyan;
+    width: 60%;
+    padding: 10px; 
+    color: white;
+    font-size: 13px;
+    border: none;
+}
+.right-contact input{
+    height: 40px;
+}
+.right-contact textarea{
+    height: 110px;
+}
+.right-contact a button{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(8, 26, 37);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 125px;
+    height: 40px;
+    height: auto;
+    border: none;
+    font-weight: 500;
+    box-shadow: 0 0 5px 0 cyan;
+}
+.right-contact a button:hover{
+    background-color:  rgb(85, 175, 175);
+    transition: 0.3s ease-in;
+    box-shadow: 0 0 5px 0 white;
+}
+.container-contactPage.dark-mode .left-contact .detail-contact{
+    color: black;
+}
+.container-contactPage.dark-mode .title-contact{
+    color: black;
+}
+.container-contactPage.dark-mode .left-contact .Pi{
+    color: rgb(8, 49, 185);
+    
+}
+.container-contactPage.dark-mode .right-contact input,
+.container-contactPage.dark-mode .right-contact textarea{
+    box-shadow: 0 0 5px 0 cyan;
+}
+.container-contactPage.dark-mode .right-contact button{
+    box-shadow: 0 0 5px 0 white;
+   
+}
+.container-contactPage.dark-mode .right-contact button{
+    background-color:  rgb(8, 49, 185);
+}
+.container-contactPage.dark-mode .right-contact button:hover{
+    background-color: cyan;
+}
+@media (max-width: 1075px) {
+    .left-contact{
+      padding-left: 0;
+    }
+    .container-contactPage{
+       padding-left: 0;
+       padding-right: 0;
+    }
+   }
+   @media (max-width: 767px) {
+    .left-contact{
+        padding-left: 50px;
+    }
+    .title-contact{
+        font-size: 30px;
+    }
+    .title-contact .Pi{
+        font-size: 30px;
+    }
+    .detail-contact h5 {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .detail-contact h5 .Md{
+        font-size: 15px;
+        position: relative;
+        top: 3px;
+    }
+    .detail-contact h5 .Fa{
+        font-size: 15px;
+        position: relative;
+        top: 3px;
+    }
+    .detail-contact{
+        padding-top: 10px;
+    }
+   }
+   @media (max-width: 610px) {
+    .container-contactPage{
+       gap: 20px;
+       height: auto;
+    }
+    .left-contact,
+    .right-contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-contact form{
+        width: 90%;
+    }
+    .left-contact{
+        padding-left: 0px;
+    }
+    .title-contact{
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title-contact .Pi{
+        font-size: 40px;
+    }
+    .detail-contact{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .detail-contact h5 {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .detail-contact h5 .Md{
+        font-size: 20px;
+        position: relative;
+        top: 0px;
+    }
+    .detail-contact h5 .Fa{
+        font-size: 20px;
+        position: relative;
+        top: 0px;
+    }
+    .right-contact input,
+    .right-contact textarea{
+    width: 60%;
+}
+.right-contact a button{
+   width: 150px;
+}
+   }
+   @media (max-width: 450px) {
+    .right-contact input,
+    .right-contact textarea{
+    width: 80%;
+}
+   }

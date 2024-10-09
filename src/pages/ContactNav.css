@@ -1,0 +1,26 @@
+.container-ContactNav{
+    width:50%;
+    margin: auto;
+    border-radius: 10px;
+    height: 100%;
+    padding: 20px;
+}
+.container-ContactNav.dark-mode {
+    background-color: #f0f0f0;
+}
+@media (max-width: 1460px) {
+    .container-ContactNav{
+     min-width: 70%;
+    }
+   }
+   @media (max-width: 970px) {
+    .container-ContactNav{
+     min-width: 90%;
+    }
+   }
+   @media (max-width: 767px) {
+     .container-ContactNav{
+      width: 100%;
+      padding: 0;
+     }
+    }

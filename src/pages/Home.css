@@ -1,0 +1,26 @@
+.container-home{
+    width:50%;
+    margin: auto;
+    border-radius: 10px;
+    height: 100%;
+    padding: 20px;
+}
+.container-home.dark-mode {
+    background-color: #f0f0f0;
+  }
+  @media (max-width: 1560px) {
+    .container-home{
+     min-width: 70%;
+    }
+   }
+  @media (max-width: 1300px) {
+   .container-home{
+    min-width: 90%;
+   }
+  }
+  @media (max-width: 767px) {
+    .container-home{
+     width: 100%;
+     padding: 0;
+    }
+   }

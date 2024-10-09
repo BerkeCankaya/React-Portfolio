@@ -1,0 +1,55 @@
+.container{
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--primary-color);
+  height: 100%;
+}
+.container.dark-mode {
+  background-color: #f0f0f0;
+}
+.container.dark-mode p{
+  color: black;
+}
+.container.dark-mode .card-content  h3{
+  color: black;
+}
+.container.dark-mode .HomeCard-content  h3{
+  color: black;
+}
+.container.dark-mode .project-HomeCard{
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+.container.dark-mode .card-content button{
+  background-color: #e0e0e0;
+  color: red;
+}
+.container.dark-mode .card-content button{
+ color: rgb(104, 104, 104);
+}
+.container.dark-mode .card-content button:hover{
+  color: white;
+ }
+.container.dark-mode .footer-container h1{
+  color: black;
+}
+.container.dark-mode .footer-container a{
+  color: black;
+}
+.container.dark-mode .contact h2{
+  color: black;
+}
+.container.dark-mode .contact button{
+  background-color: #e0e0e0;
+}
+.container.dark-mode .contact button{
+  color: black;
+}
+.container.dark-mode .contact button:hover{
+  color: white;
+  background-color:  rgb(85, 175, 175);
+}
+.container.dark-mode .card-content button:hover{
+  background-color: rgb(85, 175, 175);
+  transition: 0.3 ease-in;
+}
