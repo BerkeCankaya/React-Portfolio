@@ -115,7 +115,10 @@
     border-radius: 0 0 10px 10px;
     z-index: 0;
     background-color: transparent;
-    box-shadow: 0 1px 2px 0 white;
+    border-left: 1px solid rgb(85, 85, 85);
+    border-right: 1px solid rgb(85, 85, 85); 
+    border-bottom: 2px solid rgb(85, 85, 85); 
+    border-top: none; 
 }
 .burger-menu ul{
   display: flex;
@@ -123,6 +126,16 @@
   gap: 10px;
   align-items: flex-start; 
 }
+.nav.dark-mode .burger-menu ul li a{
+  color: black;
+}
+.nav.dark-mode .burger-menu{
+  border-left:  1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4; 
+  border-bottom: 2px solid #d4d4d4; 
+  border-top: none; 
+}
+
   @media (max-width: 767px) {
     .nav ul a{
       font-size: 25px;
