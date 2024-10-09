@@ -13,11 +13,16 @@ function App() {
     setIsDarkMode(!isDarkMode);
   };
   return (
-   
+    <Router basename="/react-portfolio">
       <div className={`container ${isDarkMode ? 'dark-mode' : ''}`}>
-       Hello World
+        <Routes>
+          <Route path="/" element={<Home toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />} />
+          <Route path="/projects" element={<ProjectsNav toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />} />
+          <Route path="/contact" element={<ContactNav toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />} />
+        </Routes>
+        <ToScrollUp isDarkMode={isDarkMode}/>
       </div>
-
+    </Router>
   );
 }
 
