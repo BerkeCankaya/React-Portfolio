@@ -161,7 +161,8 @@
   }
   @media (max-width: 500px) {
     .nav-right {
-      gap: 5px;
+      gap: 6px;
+      
     }
   }
   @media (max-width: 400px) {
@@ -175,7 +176,7 @@
 }
 .nav-right{
   width: 100%;
-  gap: 5px;
+  gap: 7px;
 }
      }
   
